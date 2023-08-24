@@ -6,18 +6,26 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit, OnDestroy {
-  title = 'angular-video-series';
+  title = 'Hello World!';
   intervalSub;
 
   ngOnInit() {
     this.intervalSub = setInterval(() => {
       console.log("Hello from ngOnInit");
     }, 1000);
-  }
+  };
 
   ngOnDestroy() {
     if(this.intervalSub) {
       clearInterval(this.intervalSub);
     }
+  };
+
+  getMin(a,b) {
+    if(a < b) {
+      return a;
+    }
+
+    return b;
   }
 }
