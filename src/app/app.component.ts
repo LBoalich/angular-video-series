@@ -10,6 +10,7 @@ export class AppComponent implements OnInit, OnDestroy {
   intervalSub;
   showText = false;
   todaysDate = new Date();
+  itemImageUrl = '../assets/phone.png';
 
   ngOnInit() {
     this.intervalSub = setInterval(() => {
