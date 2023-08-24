@@ -8,6 +8,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 export class AppComponent implements OnInit, OnDestroy {
   title = 'Hello World!';
   intervalSub;
+  showText = false;
 
   ngOnInit() {
     this.intervalSub = setInterval(() => {
@@ -27,5 +28,10 @@ export class AppComponent implements OnInit, OnDestroy {
     }
 
     return b;
+  }
+
+  toggleText(event) : void {
+    this.showText = !this.showText;
+    console.log(event);
   }
 }
