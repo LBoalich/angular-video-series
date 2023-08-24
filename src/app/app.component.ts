@@ -36,4 +36,8 @@ export class AppComponent implements OnInit, OnDestroy {
     this.showText = !this.showText;
     console.log(event);
   }
+
+  deleteItem(item) {
+    console.log(item)
+  }
 }
