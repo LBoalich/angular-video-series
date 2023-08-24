@@ -9,6 +9,7 @@ export class AppComponent implements OnInit, OnDestroy {
   title = 'Hello World!';
   intervalSub;
   showText = false;
+  todaysDate = new Date();
 
   ngOnInit() {
     this.intervalSub = setInterval(() => {
